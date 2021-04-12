@@ -1,0 +1,5 @@
+<h1>SpaceX Rockets Details</h1>
+<label for="rocket">Rocket</label>
+<select id="rocket">
+  <option *ngFor="let rocket of rockets$|async" [value]="rocket.id">{{rocket.name}}</option>
+</select>

@@ -1,0 +1,30 @@
+@startuml
+'https://plantuml.com/salt
+
+(*) --> "
+{{
+salt
+{+
+  <b>SpaceX Rockets Details</b>
+
+  Rockets
+  ^Select a rocket^
+  [Submit]
+}
+}}
+" as choose
+
+choose --> "
+{{
+salt
+{+
+  <b>SpaceX Rockets Details</b>
+
+  Rockets     | Rocket: Falcon 9
+  ^Falcon 9^  | Engine: Merlin 1D+ Engine
+  [Submit]
+
+}
+}}
+" as selectedRocket
+@enduml
